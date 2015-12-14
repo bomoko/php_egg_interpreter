@@ -1,0 +1,20 @@
+{
+    "name": "bomoko/bomoko",
+    "require": {
+        "phpspec/phpspec": "^2.3"
+    },
+    "authors": [
+        {
+            "name": "Bomoko",
+            "email": "blaize.kaye@gmail.com"
+        }
+    ],
+    "autoload": {
+      "psr-0" : {
+        "" : "src/"
+      }
+    },
+    "scripts" : {
+      "reset": "git reset HEAD --hard && git clean -f -d"
+    }
+}
