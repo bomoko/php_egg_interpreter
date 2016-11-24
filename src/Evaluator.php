@@ -1,7 +1,5 @@
 <?php
 
-use \Environment;
-
 class Evaluator
 {
     public function evaluate($expression,Environment $environment)

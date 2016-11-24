@@ -19,7 +19,7 @@ class EvaluatorSpec extends ObjectBehavior
 
     function it_returns_a_value_when_passed_a_value_expression()
     {
-      $this->evaluate(new ValueExpression(1),new Environment)->shouldReturn(1);
+      $this->evaluate(new ValueExpression(1),new Environment)->shouldReturn(1.00);
     }
 
     function it_checks_the_environment_contains_a_variable_with_word_as_key_if_a_word_expression_is_evaluated_by_itself()

@@ -15,17 +15,10 @@ if(!file_exists($argv[1])) {
 
 $contents = file_get_contents($argv[1]);
 
-// print("{$contents}\n");
-
 $contents = str_replace("\n","",$contents);
 $env = new Environment;
 $parser = new Parser;
 $evaluator = new Evaluator;
 
-
 $expression = $parser->parseExpression($contents)->getExpression();
-
-// print_r($expression);
-
-
 $evaluator->evaluate($expression,$env);
